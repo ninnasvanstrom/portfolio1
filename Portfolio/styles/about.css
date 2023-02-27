@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Helvetica Now Medium';
+    src: url(/fonts/HelveticaNow/HelveticaNowDisplay-Medium.ttf);
+    
+}
+
+@font-face {
+    font-family: 'Helvetica Now Regular';
+    src: url(/fonts/HelveticaNow/HelveticaNowDisplay-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: 'Helvetica Now Thin';
+    src: url(/fonts/HelveticaNow/HelveticaNowDisplay-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'General Sans Bold';
+    src: url(/fonts/GeneralSans/GeneralSans-Bold.otf);
+}
+
+@font-face {
+    font-family: 'General Sans Medium';
+    src: url(/fonts/GeneralSans/GeneralSans-Medium.otf);
+}
+
+@font-face {
+    font-family: 'General Sans Medium Italic';
+    src: url(/fonts/GeneralSans/GeneralSans-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: 'General Sans Medium 2';
+    src: url(/fonts/GeneralSans2/GeneralSans-Medium.woff);
+
+}
+
+@font-face {
+    font-family: 'General Sans Bold 2';
+    src: url(/fonts/GeneralSans2/GeneralSans-Bold.woff);
+}
+
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-bottom: 100px;
+    background-color: #fefef7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+p h1 h2 h3 h4 h5 h6 {
+    color: #333;
+}
+
+/* TEXT */
+
+main .description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 200px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+}
+
+main .description .left-section h1 {
+    font-family: 'General Sans Bold 2';
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+main .description .left-section  p {
+    font-family: 'Helvetica Now Thin';
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 700px;
+}
+
+main .description .left-section p span {
+    font-family: 'Helvetica Now Regular';
+}
+
+main .description .right-section img {
+    width: 500px;
+}
+
+
+
+/* GRID */
+main .grid {
+    display: flex;
+    justify-content: center;
+}
+
+main .grid #grid-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 340px);
+    grid-auto-rows: minmax(0px, auto);
+    justify-items: center;
+  }
+main .grid #grid-container .headline-container {
+    display: flex;
+  }
+main .grid #grid-container .headline-container .grid-headline {
+    margin-bottom: 10px;
+    z-index: 1;
+    margin-right: 10px;
+    font-family: 'Helvetica Now Medium';
+    font-size: 17px;
+  }
+main .grid #grid-container .headline-container .fa-solid {
+    padding-top: 3px;
+  }
+main .grid #grid-container .headline-container .fa-regular {
+    padding-top: 3px;
+  }
+main .grid #grid-container .grid-text {
+    line-height: 25px;
+    font-size: 14px;
+    font-family: 'Helvetica Now Thin';
+  }
+main .grid #grid-container .grid-column {
+    display: flex;
+    gap: 15px;
+  }
+main .grid #grid-container ul {
+    padding-left: 13px;
+    font-family: 'Helvetica Now Thin';
+  }
+main .grid #grid-container ol {
+    padding-left: 13px;
+    font-family: 'Helvetica Now Thin';
+    font-size: 14px;
+  }
+main .grid #grid-container #grid-item-1 {
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    height: 150px;
+    width: 370px;
+    padding: 20px;
+    position: relative;
+  }
+main .grid #grid-container #grid-item-1 .purple-line {
+    height: 15px;
+    width: 110px;
+    background-color: #CAD1FF;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    z-index: -1;
+  }
+main .grid #grid-container #grid-item-2 {
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    height: 150px;
+    width: 310px;
+    padding: 20px;
+    position: relative;
+  }
+main .grid #grid-container #grid-item-2 .purple-line {
+    height: 15px;
+    width: 95px;
+    background-color: #CAD1FF;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    z-index: -1;
+  }
+main .grid #grid-container #grid-item-3 {
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 150px;
+    width: 370px;
+    padding: 20px;
+    position: relative;
+  }
+main .grid #grid-container #grid-item-3 .purple-line {
+    height: 15px;
+    width: 120px;
+    background-color: #CAD1FF;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    z-index: -1;
+  }
+main .grid #grid-container #grid-item-4 {
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    height: 150px;
+    width: 370px;
+    padding: 20px;
+    position: relative;
+  }
+main .grid #grid-container #grid-item-4 .purple-line {
+    height: 15px;
+    width: 75px;
+    background-color: #CAD1FF;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    z-index: -1;
+  }
+main .grid #grid-container #grid-item-5 {
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    height: 150px;
+    width: 310px;
+    padding: 20px;
+    position: relative;
+  }
+main .grid #grid-container #grid-item-5 .purple-line {
+    height: 15px;
+    width: 110px;
+    background-color: #CAD1FF;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    z-index: -1;
+  }
+main .grid #grid-container #grid-item-6 {
+    height: 150px;
+    width: 370px;
+    padding: 20px;
+    position: relative;
+  }
+  main .grid #grid-container #grid-item-6 .purple-line {
+    height: 15px;
+    width: 130px;
+    background-color: #CAD1FF;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    z-index: -1;
+  }
+  

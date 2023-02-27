@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Blacker Pro Medium';
+    src: url(/fonts/BlackerPro/Zetafonts\ -\ Blacker\ Pro\ Display\ Medium\ Italic.otf);
+}
+
+@font-face {
+    font-family: 'Blacker Pro Condensed Light';
+    src: url(/fonts/BlackerPro/Zetafonts\ -\ Blacker\ Pro\ Display\ Condensed\ Light.otf);
+}
+
+@font-face {
+    font-family: 'Helvetica Now Thin';
+    src: url(/fonts/HelveticaNow/HelveticaNowDisplay-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica Now Regular';
+    src: url(/fonts/HelveticaNow/HelveticaNowDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica Now Medium';
+    src: url(/fonts/HelveticaNow/HelveticaNowDisplay-Medium.ttf);
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #333;
+    width: 0%;
+    z-index: 100;
+    transition: width 0.2s ease-out;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+nav .progess-bar-container img {
+    width: 50px;
+}
+
+nav .nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 70px;
+}
+
+#logo {
+   cursor: pointer;
+   transition: transform 0.15s ease-in;
+}
+
+#logo:hover {
+    /* transform: scale(1.05);
+    transition: transform 0.15s ease-in; */
+    filter: brightness(95%);
+}
+
+#dot-logo {
+    width: 50px;
+    position: absolute;
+}
+
+#name-logo {
+    width: 100px;
+    position: absolute;
+
+}
+
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 500px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#nav-menu.exit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav-menu.exit i{
+    transform: scale(0.8);
+}
+
+
+
+#nav-menu li {
+    display: inline;
+    font-size: 20px;
+    font-family: 'Helvetica Now Regular';
+    color: #333;
+    transition: transform 0.15s ease;
+    position: relative;
+}
+
+
+#nav-menu li .wave {
+    position: absolute;
+    left: 33%;
+    top: 30px;
+    opacity: 0;
+}
+
+#nav-menu.exit li {
+    font-size: 40px;
+}
+
+#nav-menu.exit li:hover {
+    transform: rotate(180deg);
+}
+
+.show-wave {
+    opacity: 1 !important;
+}
+
+#nav-menu li:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: transform 0.15s ease;
+}

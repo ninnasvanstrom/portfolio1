@@ -1,0 +1,548 @@
+@font-face {
+    font-family: 'Helvetica Now Medium';
+    src: url(/fonts/HelveticaNow/HelveticaNowDisplay-Medium.ttf);
+    
+}
+
+@font-face {
+
+    font-family: 'Helvetica Now Regular';
+    src: url(/fonts/HelveticaNow/HelveticaNowDisplay-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: 'Helvetica Now Thin';
+    src: url(/fonts/HelveticaNow/HelveticaNowDisplay-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'General Sans Bold';
+    src: url(/fonts/GeneralSans/GeneralSans-Bold.otf);
+}
+
+@font-face {
+    font-family: 'General Sans Medium';
+    src: url(/fonts/GeneralSans/GeneralSans-Medium.otf);
+}
+
+@font-face {
+    font-family: 'General Sans Medium Italic';
+    src: url(/fonts/GeneralSans/GeneralSans-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: 'General Sans Medium 2';
+    src: url(/fonts/GeneralSans2/GeneralSans-Medium.woff);
+
+}
+
+@font-face {
+     font-family: 'General Sans Bold 2';
+    src: url(/fonts/GeneralSans2/GeneralSans-Bold.woff);
+}
+
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-bottom: 100px;
+    background-color: #fefef7;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+}
+
+
+.hero img {
+    width: 1000px;
+}
+
+#intro-text {
+    color: #333;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+#intro-text .profile-pic {
+    width: 700px;
+}
+
+#name {
+    font-size: 120px;
+    margin-left: 20px;
+    font-family: 'Blacker Pro Medium';
+}
+
+#intro-text p{
+    font-size: 40px;
+    font-family: 'General Sans', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+#intro-text h1{
+    font-size: 60px;
+    font-family: 'Helvetica Now Thin';
+    max-width: 700px;
+}
+
+
+#intro-text span {
+    font-family: 'General Sans Bold 2';
+    font-weight: 700;
+    font-size: 140px;
+}
+
+#intro-text h2{
+    font-size: 40px;
+    width: 1300px;
+    line-height: 130px;
+    font-family: 'Helvetica Now Regular';
+    color: rgba(51, 51, 51, 0.842);
+    color: #333;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: normal;
+
+}
+
+
+#intro-text h2 span{
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -6px;
+
+}
+
+
+#intro-text h2 .ux-designer:hover{
+    color: #B3A1E9;
+
+}
+
+#intro-text h2 .rich-experiences:hover{
+    color: #42a676;
+
+
+}
+
+
+#intro-text h2 .storytelling:hover{
+    color: #f8b329
+
+}
+
+
+#intro-text h2 #js-text{
+    font-family: 'General Sans', sans-serif;
+    font-weight: 500;
+
+}
+
+#intro-text h2 span span {
+    font-family: 'Blacker Pro Medium';
+    font-size: 35px;
+
+    
+}
+
+#intro-text h3 {
+    font-family: 'Helvetica Now Thin';
+    font-size: 25px;
+    position: absolute;
+    top: -20px;
+    line-height: 45px;
+    margin-top: 70px;
+}
+
+#intro-text h3 span{
+    font-family: 'General Sans Medium Italic';
+    color: #333;
+}
+
+#intro-text h3 span:hover{
+    color: #333 !important;
+}
+
+
+#profile-pic {
+    width: 700px;
+    transition: transform 0.5s ease;
+}
+
+#profile-pic:hover {
+    transition: transform 0.5s ease;
+    filter: brightness(105%);
+    transform: scale(1.01);
+}
+
+
+
+
+.btn-img{
+    width: 300px;
+    margin-left: 350px;
+}
+
+
+
+
+.latest-work-section {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    position: relative;
+}
+
+
+
+
+.latest-work-section .latest-work {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 1300px;
+}
+
+.latest-work-section .latest-work .blob {
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    z-index: -1;
+    
+ }
+
+.latest-work-section .latest-work h1{
+    font-size: 50px;
+    font-family: 'General Sans Bold 2';
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.latest-work-section .latest-work .project-description{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.latest-work-section .latest-work .project-description .text-container{
+   max-width: 700px;
+}   
+
+
+.latest-work-section .latest-work .project-description .text-container h2{
+    font-size: 23px;
+    font-family: 'Helvetica Now Medium';
+
+    color: #333;
+    margin-bottom: 10px;
+    /* text-decoration: underline; */
+    /* text-transform: uppercase; */
+    transition: transform 0.2s ease, margin-left 0.2s ease;
+}   
+
+
+.latest-work-section .latest-work .project-description .text-container h2 span{
+    font-family: 'General Sans', sans-serif;
+    font-weight: 200;
+}   
+
+
+.latest-work-section .latest-work .project-description .text-container h2:hover{
+    transform: scale(1.1);
+    margin-left: 20px;
+    transition: transform 0.2s ease, margin-left 0.2s ease;
+}  
+
+.latest-work-section .latest-work .project-description .text-container p{
+    max-width: 600px;
+}  
+
+.latest-work-section .latest-work .project-description .text-container p span{
+    font-family: 'General Sans Medium';
+}  
+    
+
+.latest-work-section .latest-work .project-description .text-container p #summary{
+    font-size: 18px;
+    font-family: 'Helvetica Now Regular';
+    color: #333;
+    line-height: 45px;
+}  
+
+.latest-work-section .latest-work .project-description .text-container p #description{
+    font-size: 18px;
+    font-family: 'Helvetica Now Thin';
+    color: #333;
+    line-height: 45px;
+
+    
+}  
+
+.latest-work-section .latest-work .project-description .text-container p #description span{
+    font-size: 20px;
+    font-family: 'Helvetica Now Thin';
+    color: #333;
+    line-height: 45px;
+
+    
+}  
+
+.latest-work-section .latest-work .project-description .image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+
+    min-width: 500px !important;
+    /* height: 695px; */
+    margin-right: 150px;
+    overflow: hidden;
+    /* border: 10px black solid; */
+    /* border: 5px black solid; */
+    transition: transform 0.5s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 30px;
+    transition: transform 0.15s ease, box-shadow 0.5s ease;
+}
+
+.latest-work-section .latest-work .project-description .image-container:hover{
+    transform: scale(0.95);
+    transform: rotate(-3deg);
+    transition: transform 0.15s ease, box-shadow 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.latest-work-section .latest-work .project-description .image-container .placeholder-image{
+    cursor: pointer;
+    width: 500px;
+    height: 400px;
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+
+}
+
+.latest-work-section .latest-work .project-description .image-container .placeholder-image:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.2);
+}
+
+.latest-work-section .latest-work .project-description .wrapper p { 
+    font-family: 'Helvetica Now Medium';
+    font-size: 18px;
+    margin-top: 20px;
+    position: absolute;
+    top: 400px;
+    right: 200px;
+    opacity: 0;
+}
+
+
+
+
+.latest-work-section #see-more-work-container2 btn {
+    top: 30px;
+    left: 40px;
+    z-index: 1 !important;
+    color: white;
+    font-family: 'arial';
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    transition: background-color 0.2s ease;
+    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 100); */
+}
+
+
+.latest-work-section #see-more-work-btn-container {
+    /* margin-top: 170px; */
+    cursor: pointer;
+}
+
+.latest-work-section #see-more-work-btn-container btn {
+    color: #333;
+    border: #333 3px solid;
+    background-color: rgb(255, 251, 251);
+    /* border-radius: 20px; */
+    border-radius: 5px;
+    padding: 25px 35px;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Helvetica Now medium';
+    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 3);
+    display: inline-block;
+}
+
+.latest-work-section #see-more-work-btn-container btn:hover {
+    background-color: #42a676;
+    color: white;
+    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease;
+    box-shadow: none;
+    transform: translateY(4px) translateX(4px);
+    
+}
+
+.about-me-section  {
+    margin: auto;
+    width: 50%;
+    max-width: 2000px;
+    margin-top: 300px;
+    position: relative;
+
+}
+
+.about-me-section .about-me {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-me-section .about-me .blob{
+    position: absolute;
+    left: -10%;
+    z-index: -1;
+    top: -100px;
+}
+
+.about-me-section .about-me h1{
+    font-size: 50px;
+    font-family: 'General Sans Bold 2';
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.about-me-section .about-me p{
+    font-size: 18px;
+    font-family: 'Helvetica Now Regular';
+    color: #333;
+    line-height: 40px;
+}
+
+
+.btn-container {
+    display: flex;
+    align-items: center;
+}
+
+#about-me-btn-container {
+    /* position: absolute;
+    top: 550px; */
+    cursor: pointer;
+    margin-top: 150px;
+    margin-right: 20px;
+}
+
+
+#about-me-btn-container #about-me-btn {
+    color: #333;
+    border: #333 3px solid;
+    background-color: rgb(255, 251, 251);
+    /* border-radius: 20px; */
+    border-radius: 5px;
+    padding: 25px 35px;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Helvetica Now medium';
+    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 3);
+    display: inline-block;
+
+}
+
+
+
+#about-me-btn-container #about-me-btn:hover {
+    background-color: #42a676;
+    color: white;
+    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease;
+    box-shadow: none;
+    transform: translateY(4px) translateX(4px);
+}
+
+
+
+#contact-btn-container {
+    /* position: absolute;
+    top: 550px; */
+    cursor: pointer;
+    margin-top: 150px;
+}
+
+#contact-btn-container btn {
+    border: #333 3px solid;
+    background-color: #42a676;
+    /* border-radius: 20px; */
+    border-radius: 5px;
+    padding: 25px 25px;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Helvetica Now medium';
+    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 3);
+    display: inline-block;
+}
+
+#contact-btn-container btn a {
+    color: white;
+}
+
+#contact-btn-container btn:hover {
+    background-color: white;
+    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease;
+    box-shadow: none;
+    transform: translateY(4px) translateX(4px);
+
+}
+
+
